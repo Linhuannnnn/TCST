@@ -1,0 +1,240 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+// 首頁介紹加box
+
+$color1:#574927;
+$color2:#cdc192;
+$color3:#88723f;
+$color4:#95b6d6;
+$color5:#b68829;
+
+body{
+  position: relative;
+  h1, h2, h3, h4, h5, h6{
+  font-weight: normal;
+  }
+
+  header{
+    height: 10vh;
+    overflow: visible;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    // 跟著滑動至頂
+    // position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: $color3;
+    box-shadow: 0 2px 5px 1px $color1;
+    .logo{
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      
+      h1{
+        margin-left: 20px;
+        color: #FFF;
+      }
+    }
+
+    nav{
+      flex: 2 1 400px;
+      ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-around;    
+        li{
+          a{
+            color: #FFF;
+            text-decoration: none;
+            font-size: 1.3rem;
+          }
+          a:hover{
+            color: $color2;
+          }
+        }
+      }   
+    } 
+  }
+
+  main{
+    section.backImg{
+      // 這裡的背景用CSP素材做
+      background-image: url("https://fakeimg.pl/300x200/");
+      min-height: 90vh;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      z-index: 0;
+      // padding-bottom: 10vh; 
+
+
+      div.title{
+        background-color: rgba(0,0,0,0.1);
+        width: 100%;
+        min-height: 90vh;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+
+        .titleImg{
+          margin-top: 5%;
+          z-index: 1;
+        }
+        .stitle{
+          color: #FFF;
+          z-index: 2;
+          margin-top: -50px;
+
+          h3{
+            color: #FFF;
+            text-shadow: 0 0 5px $color1;
+          }
+
+          div.more{
+            width: 180px;
+            font-size: 1.15rem;
+            margin-top: 10px;           
+            a{
+              background-color: #FFF;
+              border-radius: 10px;
+              padding: 0.75rem 1rem;
+              color: $color5;
+              font-weight: 600;
+              text-decoration: none;
+              display: block;
+              // box-shadow: 2px 2px 5px $color5;            
+            }
+            :hover{
+              background-color: $color5;
+              color: #FFF;
+              // box-shadow: -2px -2px 5px $color1;  
+            }
+
+          }
+        }
+      }
+    }
+
+    
+    // 社團介紹
+    section#history{
+      height: 90vh;
+      background-color: $color2;
+      z-index: -1;
+      .CWT{
+        display: flex;
+        ul{
+          list-style-type: circle;
+          }
+        .TP{
+          margin: 10px 15px 10px 5px;
+          font-weight: 550;
+        }
+        .TT{
+          margin: 10px 15px 10px 5px;
+          font-weight: 550;
+        }
+        .TK{
+          margin: 10px 15px 10px 5px;
+          font-weight: 550;
+        }
+      }
+    }
+
+  }
+}
+
+// 成員介紹
+body.about{
+  background-color: $color2;
+  main{
+    background-color: #fff;
+    padding: 40px 70px;
+    margin: 40px;
+    border: 3px solid $color3;
+    border-radius: 10px;
+    section{
+      .Name{
+        color: $color1;
+        background-color: $color2;
+        padding: 10px;
+        padding-left: 20px;
+        border-radius: 5px;
+        font-weight: 600;
+      }
+      .imgL{
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+        position: relative;
+        flex-wrap: wrap;
+        img{
+          margin-right: 20px;
+
+        }
+        p{
+          align-self: center;
+          font-weight: 400;
+          font-size: 1.25rem;
+          z-index: 1;
+        }
+        .imgR{
+          // justify-self: end;
+          align-self: end;
+          position: absolute;
+          right: 0;
+          z-index: 0;
+        }
+      }
+      p.more{
+        clear: both;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: right;
+        margin-right: 20px;
+        }
+    }
+  }
+} 
+
+// 商品葉面
+body.product{
+  main{
+    section{
+      .box{
+        border: #574927 1px solid;
+        border-radius: 10px;
+        padding: 15px;
+      }
+    }
+  }
+  
+}
+
+
+// 卷軸設定
+/* width */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color3;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $color1;
+}

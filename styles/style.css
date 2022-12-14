@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  position: relative;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-weight: normal;
+}
+body header {
+  height: 10vh;
+  overflow: visible;
+  display: flex;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: #88723f;
+  box-shadow: 0 2px 5px 1px #574927;
+}
+body header .logo {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+body header .logo h1 {
+  margin-left: 20px;
+  color: #FFF;
+}
+body header nav {
+  flex: 2 1 400px;
+}
+body header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+body header nav ul li a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+body header nav ul li a:hover {
+  color: #cdc192;
+}
+body main section.backImg {
+  background-image: url("https://fakeimg.pl/300x200/");
+  min-height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+body main section.backImg div.title {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  min-height: 90vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+body main section.backImg div.title .titleImg {
+  margin-top: 5%;
+  z-index: 1;
+}
+body main section.backImg div.title .stitle {
+  color: #FFF;
+  z-index: 2;
+  margin-top: -50px;
+}
+body main section.backImg div.title .stitle h3 {
+  color: #FFF;
+  text-shadow: 0 0 5px #574927;
+}
+body main section.backImg div.title .stitle div.more {
+  width: 180px;
+  font-size: 1.15rem;
+  margin-top: 10px;
+}
+body main section.backImg div.title .stitle div.more a {
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  color: #b68829;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+}
+body main section.backImg div.title .stitle div.more :hover {
+  background-color: #b68829;
+  color: #FFF;
+}
+body main section#history {
+  height: 90vh;
+  background-color: #cdc192;
+  z-index: -1;
+}
+body main section#history .CWT {
+  display: flex;
+}
+body main section#history .CWT ul {
+  list-style-type: circle;
+}
+body main section#history .CWT .TP {
+  margin: 10px 15px 10px 5px;
+  font-weight: 550;
+}
+body main section#history .CWT .TT {
+  margin: 10px 15px 10px 5px;
+  font-weight: 550;
+}
+body main section#history .CWT .TK {
+  margin: 10px 15px 10px 5px;
+  font-weight: 550;
+}
+
+body.about {
+  background-color: #cdc192;
+}
+body.about main {
+  background-color: #fff;
+  padding: 40px 70px;
+  margin: 40px;
+  border: 3px solid #88723f;
+  border-radius: 10px;
+}
+body.about main section .Name {
+  color: #574927;
+  background-color: #cdc192;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+body.about main section .imgL {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+}
+body.about main section .imgL img {
+  margin-right: 20px;
+}
+body.about main section .imgL p {
+  align-self: center;
+  font-weight: 400;
+  font-size: 1.25rem;
+  z-index: 1;
+}
+body.about main section .imgL .imgR {
+  align-self: end;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+body.about main section p.more {
+  clear: both;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+body.product main section .box {
+  border: #574927 1px solid;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #88723f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #574927;
+}/*# sourceMappingURL=style.css.map */
