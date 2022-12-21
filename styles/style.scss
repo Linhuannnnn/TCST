@@ -6,10 +6,16 @@
 }
 // 首頁介紹加box
 
+// $color1:#574927;
+// $color2:#cdc192;
+// $color3:#88723f;
+// $color4:#95b6d6;
+// $color5:#b68829;
+
 $color1:#574927;
-$color2:#cdc192;
-$color3:#88723f;
-$color4:#95b6d6;
+$color2:#f3cb1e;
+$color3:#dd7426;
+$color4:#3985b0;
 $color5:#b68829;
 
 body{
@@ -19,6 +25,7 @@ body{
   }
 
   header{
+    right: 0;
     height: 10vh;
     overflow: visible;
     display: flex;
@@ -62,9 +69,10 @@ body{
   }
 
   main{
+    right: 0;
     section.backImg{
       // 這裡的背景用CSP素材做
-      background-image: url("https://fakeimg.pl/300x200/");
+      background-color: aliceblue;
       min-height: 90vh;
       width: 100%;
       background-size: cover;

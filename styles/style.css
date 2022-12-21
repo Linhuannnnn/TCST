@@ -12,6 +12,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   font-weight: normal;
 }
 body header {
+  right: 0;
   height: 10vh;
   overflow: visible;
   display: flex;
@@ -20,7 +21,7 @@ body header {
   position: sticky;
   top: 0;
   z-index: 5;
-  background-color: #88723f;
+  background-color: #dd7426;
   box-shadow: 0 2px 5px 1px #574927;
 }
 body header .logo {
@@ -46,10 +47,13 @@ body header nav ul li a {
   font-size: 1.3rem;
 }
 body header nav ul li a:hover {
-  color: #cdc192;
+  color: #f3cb1e;
+}
+body main {
+  right: 0;
 }
 body main section.backImg {
-  background-image: url("https://fakeimg.pl/300x200/");
+  background-color: aliceblue;
   min-height: 90vh;
   width: 100%;
   background-size: cover;
@@ -98,7 +102,7 @@ body main section.backImg div.title .stitle div.more :hover {
 }
 body main section#history {
   height: 90vh;
-  background-color: #cdc192;
+  background-color: #f3cb1e;
   z-index: -1;
 }
 body main section#history .CWT {
@@ -121,18 +125,18 @@ body main section#history .CWT .TK {
 }
 
 body.about {
-  background-color: #cdc192;
+  background-color: #f3cb1e;
 }
 body.about main {
   background-color: #fff;
   padding: 40px 70px;
   margin: 40px;
-  border: 3px solid #88723f;
+  border: 3px solid #dd7426;
   border-radius: 10px;
 }
 body.about main section .Name {
   color: #574927;
-  background-color: #cdc192;
+  background-color: #f3cb1e;
   padding: 10px;
   padding-left: 20px;
   border-radius: 5px;
@@ -186,7 +190,7 @@ body.product main section .box {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #88723f;
+  background: #dd7426;
 }
 
 /* Handle on hover */
