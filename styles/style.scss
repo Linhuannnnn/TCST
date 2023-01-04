@@ -72,7 +72,8 @@ body{
     right: 0;
     section.backImg{
       // 這裡的背景用CSP素材做
-      background-color: aliceblue;
+      background-image: url(/images/LOGO\(彩色\)_工作區域\ 1.svg);
+      // background-color: aliceblue;
       min-height: 90vh;
       width: 100%;
       background-size: cover;
@@ -182,6 +183,7 @@ body.about{
         width: 100%;
         position: relative;
         flex-wrap: wrap;
+        
         img{
           margin-right: 20px;
 
